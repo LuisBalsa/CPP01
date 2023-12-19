@@ -6,13 +6,13 @@
 #    By: luide-so <luide-so@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/14 18:03:53 by luide-so          #+#    #+#              #
-#    Updated: 2023/12/15 01:20:32 by luide-so         ###   ########.fr        #
+#    Updated: 2023/12/18 15:43:08 by luide-so         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = sed
+NAME = harl
 
-SRC = main.cpp
+SRC = main.cpp Harl.cpp
 
 OBJ_PATH = obj/
 OBJ = $(addprefix $(OBJ_PATH), $(SRC:.cpp=.o))
@@ -34,7 +34,6 @@ $(OBJ_PATH)%.o: %.cpp
 
 clean:
 	rm -rf $(OBJ_PATH)
-	rm -f *.replace
 
 fclean: clean
 	rm -f $(NAME)
