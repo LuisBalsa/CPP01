@@ -6,7 +6,7 @@
 /*   By: luide-so <luide-so@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/12 18:16:23 by luide-so          #+#    #+#             */
-/*   Updated: 2023/12/12 18:26:01 by luide-so         ###   ########.fr       */
+/*   Updated: 2024/02/03 10:39:41 by luide-so         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,10 @@
 
 HumanB::HumanB(std::string name) : _name(name)
 {
-	return;
+	this->_weapon = NULL;
 }
 
-HumanB::~HumanB(void)
-{
-	return;
-}
+HumanB::~HumanB(void){}
 
 void	HumanB::attack(void)
 {
